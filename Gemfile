@@ -22,6 +22,20 @@ end
 
 gem 'jquery-rails'
 
+group :developent do 
+  gem 'guard-spork'
+end
+
+group :development, :test do
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+  gem 'therubyracer', require: 'v8'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -36,3 +50,4 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
